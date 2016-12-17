@@ -51,7 +51,7 @@ public class MvaayooSmsProvider
     }
 
     private String buildSendQuery(String mobile, String msg) throws UnsupportedEncodingException {
-        return buildSendQuery("TEST SMS", mobile, msg);
+        return buildSendQuery(credentials.getSender(), mobile, msg);
     }
 
     /**
